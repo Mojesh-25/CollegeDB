@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.student.db.service.*;
 import com.student.db.model.*;
 
-
+/*
 //USING REST CONTROLLER
 @RestController
 public class StudentController {
@@ -53,9 +53,9 @@ public class StudentController {
 		studentService.findById(id);
 	}
 }
-
+*/
 //USING CONTROLLER
-/*
+
 @Controller
 @RequestMapping("student")
 public class StudentController{
@@ -95,7 +95,7 @@ public class StudentController{
 	
 }
 
-*/
+
 
 
 
