@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Enrollment Page</h1>
+
+<form action="/enrollment/add" method="post">
+
+
+<h4>Select Student</h4>
+
+<select name="student.student_id">
+
+<option th:each="student : ${students}"
+        th:value="${student.student_id}"
+        th:text="${student.student_name}">
+</option>
+
+</select>
+
+
+<br><br>
+
+
+<h3>Select Course</h3>
+
+<select name="course.course_id">
+
+<option th:each="course : ${courses}"
+        th:value="${course.course_id}"
+        th:text="${course.course_name}">
+</option>
+
+</select>
+
+
+<br><br>
+
+
+<button type="submit">
+    Enroll Now
+</button>
+
+
+</form>
+</body>
+</html>

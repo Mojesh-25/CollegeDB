@@ -24,11 +24,11 @@ public class CourseService {
         return courseRepository.findAll();
     }
 
-    public Course findById(Long id) {
+    public Course findById(String id) {
         return courseRepository.findById(id).orElse(null);
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(String id) {
         courseRepository.deleteById(id);
     }
 }
